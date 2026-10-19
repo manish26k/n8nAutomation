@@ -29,3 +29,6 @@ Thumbs.db
 '@ | Set-Content .\.gitignore -Encoding utf8
 # TypeScript build output
 dist/
+
+# Local n8n application data
+n8n-data/
