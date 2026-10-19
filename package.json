@@ -1,0 +1,42 @@
+{
+  "name": "n8n-ecommerce-poc",
+  "version": "1.0.0",
+  "description": "@'\r # Enterprise n8n + Playwright Ecommerce POC",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "versions": "node --version && npm --version && npx playwright --version",
+    "typecheck": "tsc --noEmit",
+    "validate-env": "tsx scripts/validate-env.ts",
+    "pretest": "npm run validate-env",
+    "test:list": "playwright test --list",
+    "git:check": "git diff --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manish26k/n8nAutomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manish26k/n8nAutomation/issues"
+  },
+  "homepage": "https://github.com/manish26k/n8nAutomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8"
+  },
+  "scripts:versions": "node --version && npm --version && npx playwright --version",
+  "scripts:report": "playwright show-report"
+}
