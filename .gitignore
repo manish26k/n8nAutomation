@@ -1,0 +1,29 @@
+@'
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Node.js dependencies
+node_modules/
+
+# Playwright output
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Generated reports and execution artifacts
+reports/
+artifacts/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+'@ | Set-Content .\.gitignore -Encoding utf8
